@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "ac02d96d-38cc-4eab-a5f8-d8055ac66f7d",
+		"name": "_Users Service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Client-ID 2280591526449b5",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://{{UserService}}/api/users",
+					"protocol": "http",
+					"host": [
+						"{{UserService}}"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Client-ID 2280591526449b5",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://{{UserService}}/api/users",
+					"protocol": "http",
+					"host": [
+						"{{UserService}}"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete specific",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://{{UserService}}/api/users/ab7d82c8-9113-4e90-ab42-d1d13d5e9e48",
+					"protocol": "http",
+					"host": [
+						"{{UserService}}"
+					],
+					"path": [
+						"api",
+						"users",
+						"ab7d82c8-9113-4e90-ab42-d1d13d5e9e48"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get specific",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{UserService}}/api/users/2a6e7255-2ade-4e67-989c-c35808b42b56",
+					"protocol": "http",
+					"host": [
+						"{{UserService}}"
+					],
+					"path": [
+						"api",
+						"users",
+						"2a6e7255-2ade-4e67-989c-c35808b42b56"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put specific",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n\r\n{\r\n\"email\":\"sisyphe@mail.com\",\r\n\"password\": \"camus\"\r\n\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{UserService}}/api/users/2a6e7255-2ade-4e67-989c-c35808b42b56",
+					"protocol": "http",
+					"host": [
+						"{{UserService}}"
+					],
+					"path": [
+						"api",
+						"users",
+						"2a6e7255-2ade-4e67-989c-c35808b42b56"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
